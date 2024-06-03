@@ -1,0 +1,51 @@
+#aboutsec {
+    height: 100vh;
+    background-image: url("./assets/bgabout.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+}
+
+#aboutsec > p {
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.841);
+    margin-right: 680px;
+    margin-left: 220px;
+    margin-top: 250px;
+    font-family: "Pathway Gothic One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: justify;
+}
+
+
+@media (min-width: 1600px){
+    #aboutsec > p {
+        margin-right: 900px;
+    }
+
+}
+
+@media (max-width: 1325px){
+    #aboutsec > p {
+        margin-right: 400px;
+    }
+
+}
+
+@media (max-width: 1040px){
+    #aboutsec > p {
+        margin-right: 100px;
+        margin-left: 100px;
+    }
+
+}
+
+@media (max-width: 1040px){
+    #aboutsec > p {
+        margin-right: 60px;
+        margin-left: 60px;
+        font-size: 25px;
+    }
+
+}

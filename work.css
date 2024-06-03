@@ -1,0 +1,103 @@
+#worksec {
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.881);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 150px 80px 80px 80px;
+    padding-top: 150px;
+    padding-left: 250px;
+    padding-right: 250px;
+}
+
+a{
+    text-decoration: none;
+}
+.workimg {
+    width: 150px;
+}
+
+.workcolimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform .5s ease-in-out;
+}
+.workcolimg:hover {
+    -webkit-transform: rotate(20deg);
+}
+
+.workcolh1, .workcolp {
+    display: flex;
+    justify-content: center;
+}
+
+.workcolh1 {
+    font-size: 35px;
+    font-family: "Pathway Gothic One", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: rgba(0, 0, 0, 0.781);
+    z-index: 1;
+}
+
+.workcolp {
+    font-size: 20px;
+    font-family: "Pathway Gothic One", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    color: rgba(0, 0, 0, 0.425);
+    z-index: 1;
+}
+
+
+.workcolbtn {
+    display: flex;
+    justify-content: center;
+}
+
+.workcolbtn > a > img {
+    width: 70px;
+    height: 70px;
+    transition: transform .5s ease-in-out;
+}
+
+.workcolbtn > a > img:hover {
+    -webkit-filter: invert(100%) !important;
+    -webkit-transform: rotate(45deg);
+}
+
+@media (max-width: 1315px){
+    #worksec {
+        padding-left: 140px;
+        padding-right: 100px;
+    }
+
+}
+
+
+@media (max-width: 1060px){
+    .workcolh1 {
+        font-size: 25px;
+    }
+
+    .workimg {
+        width: 100px;
+    }
+
+    .workcolp {
+        font-size: 15px;
+    }
+
+    .workcolbtn > a > img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 680px){
+    #worksec {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+}
