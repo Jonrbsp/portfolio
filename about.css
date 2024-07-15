@@ -1,34 +1,114 @@
 #aboutsec {
     height: 100vh;
-    background-image: url("./assets/bgabout.jpg");
+    background-color: #CECECE;
     background-size: cover;
     background-repeat: no-repeat;
-    display: grid;
+   
 }
 
-#aboutsec > p {
-    font-size: 30px;
-    color: rgba(255, 255, 255, 0.841);
-    margin-right: 680px;
-    margin-left: 220px;
-    margin-top: 250px;
+
+#title-about {
+    display: flex;
+    font-size: 70px;
+    justify-content: center;
+    color: rgb(0, 0, 0);
     font-family: "Pathway Gothic One", sans-serif;
     font-weight: 400;
+    padding-top: 80px;
+    margin: 0;
     font-style: normal;
     text-align: justify;
+    
+    font-weight: bold;
+}
+#subtitle-about{
+    display: flex;
+    font-size: 40px;
+    justify-content: center;
+    color: rgb(94, 93, 93);
+    font-family: "Pathway Gothic One", sans-serif;
+    font-weight: 400;
+    margin-right: 0;
+    font-style: normal;
+    text-align: justify;
+    margin-bottom: 0;
+    margin-top: 0;
 }
 
+.container-about {
+    display: grid;
+    grid-template-columns: 100px 100px 500px 500px;
+    grid-template-rows: repeat(12, 40px);
+    padding-left: 300px;
+    margin: 100px auto;
+}
+.container-about > p {
+    display: flex;
+    align-items: center;
+    font-family: "Pathway Gothic One", sans-serif;
+    font-weight: bold;
+}
+
+.skill-bar {
+    margin-top: 12px;
+    position: relative;
+    width: 100%;
+    height: 15px;
+    background-color: #f0f0f0;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.skill-bar-fill {
+    
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0;
+    background-color: #2a8948;
+    border-radius: 15px 0 0 15px;
+    transition: width 2s ease-in-out;
+}
+.skills-img, .skills-txt1, .skills-txt2{
+    grid-row: span 2;
+    padding-left: 200px;
+    padding-right: 0;
+    text-align: center;
+    font-family: "Pathway Gothic One", sans-serif;
+}
+.skills-txt1{
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-top: 30px;
+}
+.skills-txt1 > p {
+    margin-top: 15px;
+}
+.skills-txt2 {
+    color: rgb(118, 117, 117);
+}
+.skills-txt2 > p {
+    margin-top: 0;
+}
+.skills-img > img {
+    width: 90px;
+}
+.skills-img{
+    padding-bottom: 10px;
+}
 
 @media (min-width: 1600px){
     #aboutsec > p {
-        margin-right: 900px;
+        margin-right: 0;
     }
 
 }
 
 @media (max-width: 1325px){
     #aboutsec > p {
-        margin-right: 400px;
+        margin-right: 0;
     }
 
 }

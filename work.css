@@ -1,6 +1,40 @@
-#worksec {
+#worksec-container{
     height: 100vh;
     background-color: rgba(255, 255, 255, 0.881);
+}
+
+#title-work {
+    display: flex;
+    margin-top: 0;
+    font-size: 70px;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    font-family: "Pathway Gothic One", sans-serif;
+    font-weight: 400;
+    padding-top: 80px;
+    font-style: normal;
+    text-align: justify;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+#subtitle-work{
+    display: flex;
+    font-size: 40px;
+    justify-content: center;
+    color: rgb(94, 93, 93);
+    font-family: "Pathway Gothic One", sans-serif;
+    font-weight: 400;
+    margin-right: 0;
+    font-style: normal;
+    text-align: justify;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+
+#worksec {
+    
+    
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 150px 80px 80px 80px;
