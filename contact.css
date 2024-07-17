@@ -35,17 +35,17 @@
 }
 
 #name{
-  width: 900px;
+  width: 95%;
   height: 20px;
   border-radius: 5px;
 }
 #email{
-  width: 900px;
+  width: 95%;
   height: 20px;
   border-radius: 5px;
 }
 #message{
-  width: 900px;
+  width: 95%;
   height: 200px;
   border-radius: 5px;
 }
