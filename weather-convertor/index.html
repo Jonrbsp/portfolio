@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <a href="../code.html" id="backbtn"><p class="linkmenu menuwork">BACK</p></a></li>
+    <div id="container">
+        <h1>Temperature conversion:</h1>
+
+        <input type="number" id="textBox" value="0"><br><br>
+
+       
+        <label for="temp1" class="label">From:</label>
+        <select name="temp1" id="temp1"><br>   
+            <option value="celcius">Celcius</option>
+            <option value="fahrenheit">Fahrenheit</option>
+            <option value="kelvin">Kelvin</option>
+        </select><br>
+        <label for="temp2" class="label">To:</label>
+        <select name="temp2" id="temp2"><br>  
+            <option value="fahrenheit">Fahrenheit</option> 
+            <option value="celcius">Celcius</option>
+            <option value="kelvin">Kelvin</option>
+        </select><br>
+        <br>
+
+        <button onclick=calculateTotal() id="calculate">Calculate</button><br><br>
+        <h2 id="result"></h2>
+    </div>  
+    <script src="index.js"></script>
+</body>
+</html>
