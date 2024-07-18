@@ -43,6 +43,7 @@ body {
     grid-template-rows: 250px 300px 1fr;
     height: 100vh;
     bottom: 0;
+    min-height: 500px;
 }
 
 
@@ -397,4 +398,12 @@ h1 {
     }
 
 
+  }
+
+
+  @media (max-height: 665px){
+   
+    .view-work, .view-work-img, .bot-left{
+      display: none;
+    }
   }

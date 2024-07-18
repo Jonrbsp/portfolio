@@ -3,6 +3,7 @@
     font-weight: 400;
     font-style: normal;
     height: 100vh;
+    min-height: 800px;
     background-color: rgba(255, 255, 255, 0.881);
 }
 
@@ -97,3 +98,4 @@
   }
 
 }
+
