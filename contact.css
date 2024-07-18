@@ -96,6 +96,11 @@
     margin-left: 100px;
     margin-right: 100px;
   }
+  #subtitle-contact{
+    font-size: 2em;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
 
 }
 

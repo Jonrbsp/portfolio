@@ -142,3 +142,16 @@
     }
 
 }
+
+
+@media (max-width: 450px){
+    .container-about{
+        padding-left: 0;
+        grid-template-columns: 65px 40px 35% 35%;
+    }
+    .skills-txt2{
+        font-size: 10px;
+    }
+    
+
+}
