@@ -37,7 +37,7 @@
     
     
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 150px 80px 80px 80px;
     padding-top: 150px;
     padding-left: 250px;
@@ -49,6 +49,10 @@ a{
 }
 .workimg {
     width: 150px;
+}
+
+.workimgvideo {
+    width: 130px;
 }
 
 .workcolimg {
