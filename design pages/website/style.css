@@ -1,0 +1,38 @@
+#backbtn {
+    text-align: center;
+    
+    top: 0;
+    font-family: "Pathway Gothic One", sans-serif;
+    font-size: 2em;
+    text-decoration: none;
+    color: black;
+}
+
+#backbtn:hover{
+    color: #A0153E;
+    text-decoration: underline;
+}
+
+img {
+    
+    width: 800px;
+}
+.div-img{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.div-txt{
+    display: flex;
+    justify-content: center;
+    font-family: "Pathway Gothic One", sans-serif;
+    font-size: 1.5em;
+    width: 100vw;
+}
+.div-txt > p {
+    max-width: 800px;
+    text-align: center;
+}
