@@ -1,0 +1,80 @@
+html {
+    background-color: white;
+}
+body{
+    background: none;
+}
+
+h1 {
+    color: black;
+    top: 0;
+    margin-top: 60px;
+    font-family: "Pathway Gothic One", sans-serif;
+    font-size: 7em;
+    text-align: center;
+}
+#container-main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 100vh;
+    margin-top: 150px;
+    margin-right: 50px;
+    margin-left: 200px;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    font-size: 20px;
+    display: flex;
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    animation-duration: 1s;
+    animation-name: slidein;
+    position: fixed;
+    z-index: 2;
+}
+
+
+
+
+.div-img > a > img{
+    width: 400px;
+}
+
+.div-img > a > p {
+    font-size: 2em;
+    font-family: "Pathway Gothic One", sans-serif;
+    padding-bottom: 40px;
+    color: black;
+}
+
+@media (max-width: 1300px){
+    #container-main{
+        grid-template-columns: 1fr 1fr ;
+    }
+}
+
+@media (max-width: 895px){
+    #container-main{
+        grid-template-columns: 1fr;
+        margin-left: 25%;
+    }
+}
+
+@media (max-width: 680px){
+    h1{
+        margin-bottom: 0;
+    }
+    #container-main{
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 615px){
+    #container-main{
+        grid-template-columns: 1fr;
+        margin-left: 10px;
+    }
+}

@@ -35,44 +35,30 @@
   margin-top: 0;
 }
 
-#name{
-  width: 95%;
-  height: 20px;
-  border-radius: 5px;
+.contactdiv{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 100px 50px;
+  margin-top: 200px;
 }
-#email{
-  width: 95%;
-  height: 20px;
-  border-radius: 5px;
+.contactdiv > img {
+  display: flex;
+  justify-self: center;
+  width: 100px;
 }
-#message{
-  width: 95%;
-  height: 200px;
-  border-radius: 5px;
+.contactdiv > a {
+  display: flex;
+  justify-self: center;
+  font-size: 2em;
+  color: rgb(86, 86, 86);
+  text-decoration: underline;
 }
-  
-  /* Style the submit button with a specific background color etc */
-  input[type=submit] {
-    background-color: #606161;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  input[type=submit]:hover {
-    background-color: #9b9b9b;
-  }
-  
-  /* Add a background color and some padding around the form */
-  .containerform {
-    border-radius: 5px;
-    padding: 20px;
-    margin-left: 500px;
-    margin-right: 500px;
-    padding-top: 100px;
-    padding-bottom: 65px;
-  }
+#email-p{
+  display: flex;
+  justify-self: center;
+  font-size: 2.5em;
+}
+
 
 
 @media (max-width: 1360px){

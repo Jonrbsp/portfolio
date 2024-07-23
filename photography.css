@@ -1,0 +1,62 @@
+html{
+    background-color: white;
+}
+body{
+    background: none;
+}
+h1 {
+    color: black;
+    top: 0;
+    margin-top: 60px;
+    font-family: "Pathway Gothic One", sans-serif;
+    font-size: 7em;
+    text-align: center;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    margin-top: 200px;
+    margin-left: 200px;
+    gap: 10px;
+    margin-right: 200px;
+}
+.navbar{
+    top: 0;
+}
+
+.collumn > a > img {
+    width: 400px;
+}
+
+.collumn > a > p {
+    font-family: "Pathway Gothic One", sans-serif;
+    font-size: 2em;
+    padding-bottom: 40px;
+    color: black;
+}
+
+.collumn > a > p:hover {
+    
+    color: rgb(117, 117, 117);
+}
+
+@media (max-width: 860px){
+    .container{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+}
+
+@media (max-width: 680px){
+    h1{
+        margin-top: 150px;
+        margin-bottom: 0;
+    }
+    .container{
+        margin-top: 100px;
+    }
+}
