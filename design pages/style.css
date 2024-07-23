@@ -38,3 +38,16 @@ img{
     margin-left: auto;
     margin-right: auto;
 }
+
+@media (max-width: 860px){
+    .txt{
+        width: 100vw;
+        text-align: justify;
+    }
+    .container {
+        width: 100vw;
+    }
+    img {
+        max-width: 100vw;
+    }
+}
