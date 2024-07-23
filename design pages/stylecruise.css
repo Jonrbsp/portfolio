@@ -1,0 +1,93 @@
+#backbtn {
+    text-align: center;
+    
+    top: 0;
+    font-family: "Pathway Gothic One", sans-serif;
+    font-size: 2em;
+    text-decoration: none;
+    color: black;
+}
+
+#backbtn:hover{
+    color: #A0153E;
+    text-decoration: underline;
+}
+
+.txt > p{
+    text-align: center;
+    font-family: "Pathway Gothic One", sans-serif;
+    font-size: 1.5em;
+    padding-bottom: 70px;
+}
+.txt{
+    width: 800px;
+}
+.first-txt{
+    margin-top: 100px;
+    text-align: justify;
+}
+.container {
+    display: block;
+    align-self: center;
+    justify-content: center;
+    width: 800px;
+    margin: auto;
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.imgapp, .imgscreen{
+    max-width: 600px;
+    max-height: 600px;
+}
+
+.containerapp{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+.containerscreen{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.containeridentity{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.containeridentity > img {
+    max-height: 600px;
+}
+
+
+@media (max-width: 1200px){
+    .containeridentity{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .containerapp{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+
+@media (max-width: 560px){
+    .containeridentity{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    .containerapp{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    .containerscreen{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}
