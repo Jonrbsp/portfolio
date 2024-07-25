@@ -35,12 +35,17 @@
     margin-top: 0;
 }
 
+
+
 .container-about {
     display: grid;
     grid-template-columns: 100px 100px 35% 35%;
     grid-template-rows: repeat(12, 40px);
     padding-left: 250px;
     margin: 100px auto;
+}
+.container-about-mobile{
+    display: none;
 }
 .container-about > p {
     display: flex;
@@ -145,13 +150,51 @@
 
 
 @media (max-width: 450px){
-    .container-about{
-        padding-left: 0;
-        grid-template-columns: 65px 40px 35% 35%;
+    .skills-txt1, .skills-txt2, .skills-img{
+        display: none;
     }
-    .skills-txt2{
-        font-size: 10px;
+    .container-about {
+        grid-template-columns: 80px 1fr;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-bottom: 0;
+    }
+    .container-about-mobile{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .container-about-mobile-title{
+        grid-column: span 2;
+        text-align: center;
+
+    }
+
+    .container-about-mobile-title > p {
+        font-family: "Pathway Gothic One", sans-serif;
+        font-size: 3em;
+    }
+
+    .container-about-mobile-img > img {
+        width: 80px;
+        height: 80px;
+    }
+    .container-about-mobile-img {
+        display: flex;
+        justify-content: center;
+    }
+
+    .container-about-mobile-txt > p {
+        font-family: "Pathway Gothic One", sans-serif;
+        padding-right: 20px;
+        text-align: justify;
+    }
+
+    #aboutsec {
+        height: 2000px;
     }
     
 
 }
+

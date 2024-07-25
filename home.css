@@ -31,7 +31,7 @@ body {
     background: radial-gradient(#ababab, #efefef);
 }
 
-.main-img > img{
+#main-img-img{
     width: 700px;
     z-index: 1;
     margin-bottom: 0;
@@ -418,12 +418,14 @@ h1 {
     .name-center > h1 {
       font-size: 5em;
     }
-    .main-img > img {
-      width: 300px;
+    #main-img-img{
+      width: 100px;
     }
     #home {
       grid-template-columns: 1fr 1fr 100px;
       grid-template-rows: 1fr 1fr;
     }
+    
   }
+
   

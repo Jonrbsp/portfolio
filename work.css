@@ -1,6 +1,6 @@
 #worksec-container{
     height: 100vh;
-    min-height: 800px;
+    min-height: 900px;
     background-color: rgba(255, 255, 255, 0.881);
 }
 
@@ -44,6 +44,15 @@
     padding-right: 250px;
 }
 
+#worksec-mobile {
+    
+    
+    display: none;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 180px 50px 50px 50px 180px 50px 50px 50px;
+    
+}
+
 a{
     text-decoration: none;
 }
@@ -51,8 +60,12 @@ a{
     width: 150px;
 }
 
+.workcolimg-photo{
+    width: 170px;
+}
+
 .workimgvideo {
-    width: 120px;
+    width: 130px;
 }
 
 .workcolimg {
@@ -118,9 +131,15 @@ a{
     .workcolh1 {
         font-size: 25px;
     }
-
+    #worksec {
+        padding-right: 50px;
+        padding-left: 50px;
+    }
     .workimg {
         width: 100px;
+    }
+    .workcolimg-photo {
+        width: 120px;
     }
 
     .workcolp {
@@ -135,8 +154,16 @@ a{
 
 @media (max-width: 680px){
     #worksec {
-        padding-left: 0px;
-        padding-right: 0px;
+        display: none;
+    }
+    #worksec-mobile {
+        display: grid;
+    }
+    .workcolp {
+        text-align: center;
+    }
+    .workcolimg{
+        margin-top: 100px;
     }
 
 }
