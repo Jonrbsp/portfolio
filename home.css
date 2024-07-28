@@ -13,7 +13,7 @@ html {
   overflow-x: hidden;
 }
 
-.main-img {
+.main-img1 {
     position: absolute;
     display: flex;
     justify-content: center;
@@ -24,6 +24,10 @@ html {
     bottom: 0;
 }
 
+.main-img2{
+  display: none;
+}
+
 
 
 body {
@@ -31,7 +35,7 @@ body {
     background: radial-gradient(#ababab, #efefef);
 }
 
-#main-img-img{
+#main-img-img1{
     width: 700px;
     z-index: 1;
     margin-bottom: 0;
@@ -390,6 +394,29 @@ h1 {
 
   }
 
+  @media (max-width: 550px){
+    .main-img2{
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      top: 10%;
+      left: 35%;
+      right: 35%;
+      bottom: 0;
+    }
+    .main-img1 {
+      display: none;
+    }
+    #main-img-img2{
+      width: 300px;
+      z-index: 1;
+      margin-bottom: 0;
+      animation-duration: 3s;
+      animation-name: appear;
+  }
+  }
+
   @media (max-width: 470px){
     .navbar > ul > li {
       font-size: 15px;
@@ -410,6 +437,7 @@ h1 {
 
     
   }
+
 
   @media (max-height: 450px){
     .name-center{
